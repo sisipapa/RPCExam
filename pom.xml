@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>WizblRPC</groupId>
+  <artifactId>WizblRPC</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+  	<!-- HttpClient 라이브러리 설정 -->
+	<dependency>
+	  <groupId>org.apache.httpcomponents</groupId>
+	  <artifactId>httpclient</artifactId>
+	  <version>4.3.6</version>
+	</dependency>
+	<!-- HttpClient - Multipart를 위한 라이브러리 설정 -->
+	<dependency>
+	    <groupId>org.apache.httpcomponents</groupId>
+	    <artifactId>httpmime</artifactId>
+	    <version>4.3.6</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
+	<dependency>
+	    <groupId>com.googlecode.json-simple</groupId>
+	    <artifactId>json-simple</artifactId>
+	    <version>1.1</version>
+	</dependency>	
+	
+	<!-- Ethereum Client -->
+	<dependency>
+	  <groupId>org.web3j</groupId>
+	  <artifactId>core</artifactId>
+	  <version>3.4.0</version>
+	</dependency>
+	
+	<!-- Web3jUtil에서 사용함 -->
+	<dependency>
+	    <groupId>org.json</groupId>
+	    <artifactId>json</artifactId>
+	    <version>20180130</version>
+	</dependency>
+	
+	<!-- Bitcoin Client -->
+	<dependency>
+        <groupId>wf.bitcoin</groupId>
+        <artifactId>JavaBitcoindRpcClient</artifactId>
+        <version>0.9.13</version>
+	</dependency>
+	
+  </dependencies>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.7.0</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
